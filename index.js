@@ -1,8 +1,5 @@
-'use strict'
-
 const next = require('next')
-const nextAuth = require('next-auth')
-const nextAuthConfig = require('./next-auth.config')
+const express = require('express')
 
 // Load environment variables from .env file if present
 require('dotenv').load()
@@ -26,25 +23,11 @@ const nextApp = next({
   dev: (process.env.NODE_ENV === 'development')
 })
 
-// Add next-auth to next app
 nextApp
 .prepare()
-.then(() => {
-  // Load configuration and return config object
-  return nextAuthConfig()
-})
-.then(nextAuthOptions => {
-  // Pass Next.js App instance and NextAuth options to NextAuth
-  // Note We do not pass a port in nextAuthOptions, because we want to add some
-  // additional routes before Express starts (if you do pass a port, NextAuth
-  // tells NextApp to handle default routing and starts Express automatically).
-  return nextAuth(nextApp, nextAuthOptions)
-})
 .then(nextAuthOptions => {
   // Get Express and instance of Express from NextAuth
-  const express = nextAuthOptions.express
-  const expressApp = nextAuthOptions.expressApp
-
+  const expressApp = express()
 
   // Serve fonts from ionicon npm module
   expressApp.use('/fonts/ionicons', express.static('./node_modules/ionicons/dist/fonts'))
