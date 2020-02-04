@@ -1,0 +1,141 @@
+@charset "UTF-8";
+$ionicons-font-path: "/fonts/ionicons" !default;
+$ionicons-font-family: "Ionicons" !default;
+$ionicons-version: "3.0.0-alpha.3" !default;
+@import "../node_modules/ionicons/dist/scss/ionicons";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
+@import "nojs-menus.scss";
+
+.lead {
+  font-size: 1.4em;
+}
+
+.brand-primary {
+  font-family: 'Martel Sans', sans-serif;
+  color: #0c1a52;
+  font-weight: 700;
+}
+
+.brand-secondary {
+  color: #9e2e38;
+  font-weight: 700;
+}
+
+.brand-info {
+  color: #44443f;
+}
+
+.background-secondary{
+  background-color: #f9dcea;
+}
+
+.background-primary {
+  background-color: #acf1ed;
+}
+
+.navbar-light .navbar-brand {
+  color: #0c1a52;
+  font-size: 2em;
+}
+
+.btn-primary {
+  border-width: 3px;
+  border-color:#005cbf;
+  background-color: #fff;
+  color: #005cbf;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #005cbf;
+}
+
+.card {
+  border: 3px solid #0c1a52;
+}
+
+.card-header {
+  background:#fff;
+  border-bottom: 3px solid #0c1a52;
+}
+
+.input-background-primary {
+  border: 2px solid #0c1a52;
+}
+
+body {
+  background-color: #acf1ed;
+}
+
+pre {
+  background-color: #333;
+  border-color: #333;
+  color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar,
+.navbar .btn,
+.navbar .dropdown-item,
+.navbar button {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 8em;
+  }
+  .display-3 {
+    font-size: 2.5em;
+  }
+  .display-4 {
+    font-size: 2em;
+  }
+}
+
+.icon-spin {
+  display: inline-block;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/**
+ * This is a fix for Reactstrap 5.0.0-alpha.4 not displaying menus in the
+ * navbar correcrtly on mobile devices.
+ **/
+.navbar .dropdown {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    position: relative !important;
+    display: block !important;
+    transform: none !important;
+    padding: 0 0 10px 0;
+    border: none;
+  }
+}
+
+/**
+ * Fix for Reactstrap
+ **/
+.react-bs-table-sizePerPage-dropdown .dropdown-item a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.react-bs-table-sizePerPage-dropdown button {
+  background: #fff;
+  color: #000;
+}

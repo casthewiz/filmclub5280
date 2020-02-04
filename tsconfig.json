@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "module": "es2015",
+      "target": "es5",
+      "esModuleInterop": true,
+      "lib": [
+        "es5",
+        "es6",
+        "es2016.array.include",
+        "dom"
+      ],
+      "noImplicitAny": false,
+      "noEmit": false,
+      "sourceMap": true,
+      "outDir": "lib",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "include": [
+      "components/**/*.ts",
+      "components/**/*.tsx",
+      "components/**/*.js",
+      "components/**/*.jsx",
+      "containers/**/*.ts",
+      "containers/**/*.tsx",
+      "containers/**/*.js",
+      "containers/**/*.jsx",
+    ],
+    "exclude": [
+      "css/**/*.scss"
+    ]
+  }
