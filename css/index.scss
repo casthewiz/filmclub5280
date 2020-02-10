@@ -11,61 +11,18 @@ $ionicons-version: "3.0.0-alpha.3" !default;
   font-size: 1.4em;
 }
 
-.brand-primary {
-  font-family: 'Martel Sans', sans-serif;
-  color: #0c1a52;
-  font-weight: 700;
-}
-
-.brand-secondary {
-  color: #9e2e38;
-  font-weight: 700;
-}
-
-.brand-info {
-  color: #44443f;
-}
-
 .background-secondary{
   background-color: #f9dcea;
 }
 
 .background-primary {
-  background-color: #acf1ed;
-}
-
-.navbar-light .navbar-brand {
-  color: #0c1a52;
-  font-size: 2em;
-}
-
-.btn-primary {
-  border-width: 3px;
-  border-color:#005cbf;
   background-color: #fff;
-  color: #005cbf;
-  font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: #005cbf;
-}
 
-.card {
-  border: 3px solid #0c1a52;
-}
-
-.card-header {
-  background:#fff;
-  border-bottom: 3px solid #0c1a52;
-}
-
-.input-background-primary {
-  border: 2px solid #0c1a52;
-}
 
 body {
-  background-color: #acf1ed;
+  background-color: #fff;
 }
 
 pre {
