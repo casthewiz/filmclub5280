@@ -12,13 +12,14 @@ const App = ( props ) => {
         <Row className="pb-5">
           <Col xs="7" sm="4" className="placeholder">
             <h1>Submission Bucket goes here</h1>
+            <DragDropContext>
+              <Submissions />        
+            </DragDropContext>
           </Col>
           <Col xs="5" sm="4" className="placeholder">
             <h1>Ranked Order goes here</h1>
           </Col>
-          <DragDropContext>
-            <Submissions />        
-          </DragDropContext>
+
           </Row>
         <style jsx>{
           `
