@@ -1,10 +1,12 @@
 import React from 'react'
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from 'reactstrap'
 import Layout from '../containers/layout'
-import { DragDropContext } from 'react-beautiful-dnd'
+import { DragDropContext, resetServerContext } from 'react-beautiful-dnd'
 import Submissions from '../containers/submissions'
 
+
 const App = ( props ) => {
+  resetServerContext();
   return (
     <Layout {...props} navmenu={false} container={false}>
       <Container>

@@ -18,7 +18,7 @@ const Submissions = ( props ) => {
                 {
                     stubData(10).map((d, index) => {
                         return (
-                            <Draggable index={index} draggableId={'draggable_'+index}>
+                            <Draggable key={index} index={index} draggableId={'draggable_'+index}>
                                 {(provided, snapshot) => {
                                     return (
                                         <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} >
