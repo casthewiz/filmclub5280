@@ -14,10 +14,10 @@ export default class extends React.Component {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta name="description" content={this.props.metaDescription ||
-            "A cms so simple it sets up in minutes. Cupcake is a headless cms that makes life easy for content creators and developers."}/>
-          <meta name="keywords" content={this.props.metaKeywords || "CMS, Cupcake, Headless CMS, easy CMS, simple CMS, lightweight CMS"}/>
+            "Film club a mile high."}/>
+          <meta name="keywords" content={this.props.metaKeywords || ""}/>
           <meta name="robots" content={this.props.metaRobots || "all"}/>
-          <title>{this.props.title || 'Cupcake | A CMS made headless and simple'}</title>
+          <title>{this.props.title || '5280 Film Club'}</title>
           <style dangerouslySetInnerHTML={{__html: Styles}}/>
           <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet"/>
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js"/>
